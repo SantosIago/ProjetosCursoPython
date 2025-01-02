@@ -1,12 +1,11 @@
-print('_____________________________________\n'
-      'IMPAR OU PAR?\n'
-      '_____________________________________\n')
-
-num = int(input('Digite um número: '))
+from time import sleep
+num = int(input('Digite um número qualquer: '))
 res = num % 2
+print('PROCESSANDO...')
+sleep(3)
 if res == 0:
-    print('ESSE NÚMERO É PAR!\n'
-          '__________________')
+    print('ESSE NÚMERO É PAR!')
+    print('--' * 10)
 else:
-    print('ESSE NÚMERO É IMPAR!\n'
-          '____________________')
+    print('ESSE NÚMERO É IMPAR!')
+    print('--' * 10)
